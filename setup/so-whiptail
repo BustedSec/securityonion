@@ -117,9 +117,8 @@ whiptail_sensor_nics() {
 		if [[ "${nmcli_dev_status_list}" =~ $bond_nic\:unmanaged ]]; then
 			whiptail \
 				--title "Security Onion Setup" \
-				--msgbox "$bond_nic is unmanaged by Network Manager. Please remove it from other network management tools then re-run setup." \
+				--msgbox "$bond_nic is unmanaged by Network Manager. Please remove it from other network management tools then re-run setup. Fuck that- lets continue" \
 				8 75
-			exit
 		fi
 	done
 }
